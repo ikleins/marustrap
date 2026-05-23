@@ -39,7 +39,7 @@ namespace Bloxstrap.Models.Persistable
         public WebEnvironment WebEnvironment { get; set; } = WebEnvironment.Production;
 
         // integration configuration
-        public CleanerOptions CleanerOptions { get; set; } = CleanerOptions.Never;
+        public CleanerOptions CleanerOptions { get; set; } = CleanerOptions.TwoWeeks;
         public List<string> CleanerDirectories { get; set; } = new List<string>();
         public bool FakeBorderlessFullscreen { get; set; } = false;
         public bool EnableActivityTracking { get; set; } = true;

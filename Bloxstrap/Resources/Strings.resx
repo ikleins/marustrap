@@ -1423,6 +1423,9 @@ Would you like to switch your preferred channel to {0}?</value>
   <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
     <value>After 1 week</value>
   </data>
+  <data name="Enums.CleanerOptions.TwoWeeks" xml:space="preserve">
+    <value>After 2 weeks</value>
+  </data>
   <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
     <value>After 1 month</value>
   </data>

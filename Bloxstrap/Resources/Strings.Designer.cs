@@ -2089,6 +2089,15 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to After 2 weeks.
+        /// </summary>
+        public static string Enums_CleanerOptions_TwoWeeks {
+            get {
+                return ResourceManager.GetString("Enums.CleanerOptions.TwoWeeks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to After 2 months.
         /// </summary>
         public static string Enums_CleanerOptions_TwoMonths {

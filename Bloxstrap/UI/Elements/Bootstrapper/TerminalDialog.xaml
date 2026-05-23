@@ -13,7 +13,7 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="{DynamicResource MainWindowBackgroundBrush}">
-    
+
     <base:WpfUiWindow.TaskbarItemInfo>
         <TaskbarItemInfo ProgressState="{Binding Path=TaskbarProgressState}" ProgressValue="{Binding Path=TaskbarProgressValue}" />
     </base:WpfUiWindow.TaskbarItemInfo>
@@ -26,10 +26,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="0" Background="#333333">
-            <ui:TitleBar x:Name="TerminalTitleBar" Background="Transparent" Height="40" ShowMaximize="True" ShowMinimize="True" ShowClose="True" Loaded="TerminalTitleBar_Loaded" CloseClicked="UiWindow_Closing" CanMaximize="False" Panel.ZIndex="100" />
+        <Grid Grid.Row="0">
+            <ui:TitleBar x:Name="TerminalTitleBar" Background="Transparent" Height="40" ShowMaximize="True" ShowMinimize="True" ShowClose="True" Loaded="TerminalTitleBar_Loaded" CloseClicked="UiWindow_Closing" CanMaximize="False" />
             
-            <TabControl Grid.Column="0" Margin="12,0,0,0" Height="32" VerticalAlignment="Bottom" Background="Transparent" BorderBrush="Transparent" Padding="0">
+            <TabControl Grid.Column="0" Margin="12,0,0,0" Height="32" Width="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Transparent" BorderBrush="Transparent" Padding="0">
                 <TabItem Background="Black" BorderBrush="Transparent" BorderThickness="0" Width="200">
                     <TabItem.Template>
                         <ControlTemplate TargetType="TabItem">
@@ -55,7 +55,7 @@
 
                             <Image Grid.Column="0" Source="\Resources\BootstrapperStyles\TerminalDialog\Powershell.png" Height="18" Margin="0,0,6,0" VerticalAlignment="Center" />
 
-                            <TextBlock Grid.Column="1" Text="Windows Powershell" VerticalAlignment="Center" Margin="0,0,8,2" TextTrimming="CharacterEllipsis" />
+                            <TextBlock Grid.Column="1" Foreground="White" Text="Windows Powershell" VerticalAlignment="Center" FontSize="12" Margin="0,0,8,1" TextTrimming="CharacterEllipsis" />
 
                             <ui:Button Grid.Column="2" Appearance="Transparent" Padding="4" BorderThickness="0" VerticalAlignment="Center" Margin="0,0,2,0" Click="UiWindow_Closing">
                                 <ui:SymbolIcon Symbol="Dismiss20" FontSize="14" Foreground="White" />
@@ -65,7 +65,7 @@
                 </TabItem>
             </TabControl>
         </Grid>
-        <Grid Grid.Row="1" Background="Transparent">
+        <Grid x:Name="MainTerminal" Grid.Row="1" Background="Black">
             <ScrollViewer x:Name="ScrollViewer" Margin="12" FontSize="16" ScrollChanged="ScrollViewer_ScrollChanged">
                 <StackPanel>
                     <TextBlock Text="Windows Powershell" Foreground="White" Opacity="0.95" TextWrapping="Wrap" FontFamily="{StaticResource CascadiaCode}" />
@@ -73,7 +73,7 @@
                     <TextBlock />
                     <TextBlock Text="Try the new cross-platform PowerShell https://aka.ms/pscore6" Foreground="White" Opacity="0.95" TextWrapping="Wrap" FontFamily="{StaticResource CascadiaCode}" />
                     <TextBlock />
-                    <TextBlock Text="PS> ./Fishstrap.exe" Foreground="White" Opacity="0.95" TextWrapping="Wrap" FontFamily="{StaticResource CascadiaCode}" />
+                    <TextBlock x:Name="LaunchArgsTextBox" Text="PS> ./Fishstrap.exe " TextTrimming="CharacterEllipsis" Height="18" Foreground="White" Opacity="0.95" TextWrapping="Wrap" FontFamily="{StaticResource CascadiaCode}" />
                     <TextBlock />
                     <TextBlock Text="{Binding Message}" Foreground="White" Opacity="0.95" TextWrapping="Wrap" FontFamily="{StaticResource CascadiaCode}" />
                 </StackPanel>

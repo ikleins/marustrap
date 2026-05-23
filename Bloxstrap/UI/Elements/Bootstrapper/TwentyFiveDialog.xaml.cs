@@ -109,8 +109,10 @@ namespace Bloxstrap.UI.Elements.Bootstrapper
             {
                 this.Resources["MainWindowBackgroundBrush"] = new SolidColorBrush(System.Windows.Media.Color.FromArgb(opacity, 250, 250, 250));
 
-                if (App.Settings.Prop.Theme.GetFinal() == Enums.Theme.Light)
+                if (App.Settings.Prop.Theme.GetFinal() == Enums.Theme.Dark)
                     this.Resources["MainWindowBackgroundBrush"] = new SolidColorBrush(System.Windows.Media.Color.FromArgb(opacity, 32, 32, 32));
+                else
+                    new SolidColorBrush(System.Windows.Media.Color.FromArgb(opacity, 255, 255, 255));
             }
 
             Title = App.Settings.Prop.BootstrapperTitle;

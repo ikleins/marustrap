@@ -16,7 +16,8 @@ namespace Bloxstrap.Integrations
             { "FishstrapLogs", Paths.Logs },
             { "FishstrapCache", Paths.Downloads },
             { "RobloxLogs", Paths.RobloxLogs },
-            { "RobloxCache", Paths.RobloxCache }
+            { "RobloxCache", Paths.RobloxCache },
+            { "RobloxStudioCache", Paths.RobloxStudioCache }
         };
 
         public static void DoCleaning()

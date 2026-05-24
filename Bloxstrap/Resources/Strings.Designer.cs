@@ -3339,6 +3339,24 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Old Studio downloads will be deleted..
+        /// </summary>
+        public static string Menu_Bootstrapper_Cleaner_StudioCache_Description {
+            get {
+                return ResourceManager.GetString("Menu.Bootstrapper.Cleaner.StudioCache.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Studio Cache.
+        /// </summary>
+        public static string Menu_Bootstrapper_Cleaner_StudioCache_Title {
+            get {
+                return ResourceManager.GetString("Menu.Bootstrapper.Cleaner.StudioCache.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fishstrap will remove old data to save on space.
         /// </summary>
         public static string Menu_Bootstrapper_CleanUp_Description {

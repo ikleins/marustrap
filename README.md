@@ -1,59 +1,12 @@
-> [!CAUTION]
-> The only official places to download Fishstrap are this GitHub repository and
-> our website <https://www.fishstrap.app>. Any other websites offering downloads
-> or claiming to be us are not controlled by us, do not download from them.
-
-<div align="center">
-
-![][banner-light]
-![][banner-dark]
-
-![][badge-license]
-![][badge-actions]
-![][badge-downloads]
-[![][badge-latest]][repo-latest]
-[![][badge-discord]][discord-invite]
-![][badge-stars]
-
-</div>
-
-Fishstrap (pronounced fish-strap) is a custom bootstrapper for Roblox based on
-[Bloxstrap][bloxstrap] (pronounced blox-strap). It provides additional features
-to enhance your experience.
-
-If you found any bugs, please [open an issue here][repo-new-issue] or make a new
-post in [our Discord server][discord-invite]'s `#support-and-bugs` channel.
-
-> [!NOTE]
-> Fishstrap is an application for **Windows 10 and above.** For other operating
-> systems, such as Mac OS and various Linux distributions, you can try
-> [AppleBlox][appleblox] and [Sober][sober] respectively.
-
-## Features
-
-- Detailed server information using [RoValra][rovalra]'s API
-- Support for Roblox Studio
-- Unhidden FastFlags editor
-  - You cannot apply FastFlags not present in the allowlist. This does not
-    affect Roblox Studio. [Learn more][devforum-fflags]
-- Global Basic Settings editor
-  - Ability to increase frame rate cap, toggle quality levels and more
-- Fishstrap's own game invites
-  - Try it out now — this link will lead you to Crossroads (don't turn left!):
-    <https://www.fishstrap.app/v1/joingame?placeId=1818>
-- Cache cleaner, channel switcher and many more
+marustrap (pronounced ma-ru-strap) is a custom personal bootstrapper for Roblox based on
+[Bloxstrap][bloxstrap] (pronounced blox-strap) and a fork of [Fishstrap][fishstrap] (pronounced fish-strap).
 
 ## Special thanks
 
+- The Fishstrap Team
 - [Valra](https://github.com/NotValra) for providing their API
 - Other independent contributors
 
-<div align="center">
-
-![][repo-showcase-light]
-![][repo-showcase-dark]
-
-</div>
 
 [banner-light]: https://github.com/fishstrap/fishstrap/raw/main/Images/Fishstrap-Light.png#gh-light-mode-only
 [banner-dark]:  https://github.com/fishstrap/fishstrap/raw/main/Images/Fishstrap-Dark.png#gh-dark-mode-only
@@ -73,6 +26,7 @@ post in [our Discord server][discord-invite]'s `#support-and-bugs` channel.
 
 [discord-invite]: https://discord.gg/SRs5zb9BJd
 
+[fishstrap]: https://www.fishstrap.app/
 [bloxstrap]: https://bloxstraplabs.com
 [appleblox]: https://github.com/AppleBlox/appleblox
 [sober]:     https://sober.vinegarhq.org

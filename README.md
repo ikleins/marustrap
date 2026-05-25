@@ -1,7 +1,7 @@
 marustrap (pronounced ma-ru-strap) is a custom personal bootstrapper for Roblox based on
 [Bloxstrap][bloxstrap] (pronounced blox-strap) and a fork of [Fishstrap][fishstrap] (pronounced fish-strap).
 
-(marustrap will most likely be deprecated, since i dont know how github works)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 ## Special thanks
 
